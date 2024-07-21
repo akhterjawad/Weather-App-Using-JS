@@ -1,0 +1,16 @@
+body {
+    background: linear-gradient(135deg, #72EDF2 10%, #5151E5 100%);
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+.card-custom {
+    background: white;
+    border: none;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    color: #333;
+}
+.weather-icon {
+    width: 100px;
+}
