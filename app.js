@@ -8,8 +8,9 @@ form.addEventListener("submit", (event) => {
         `http://api.weatherapi.com/v1/current.json?key=b4db485d7c4c485fa6d84351232508&q=${city.value}&aqi=no`
     )
         .then((res) => {
+            city.value = ``;
             console.log(res.data);
-            card.innerHTML += `
+            card.innerHTML = `
                 <div class='card-custom mx-auto mt-5' style='max-width: 600px;'>
                     <h1 class='h3'>${res.data.location.name}</h1>
                     <p class='text-muted'>${res.data.location.localtime}, ${res.data.location.country}</p>
